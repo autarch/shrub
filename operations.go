@@ -61,7 +61,7 @@ type CmdExecShell struct {
 	Script                        string            `json:"script" yaml:"script"`
 	Shell                         string            `json:"shell,omitempty" yaml:"shell,omitempty"`
 	Env                           map[string]string `json:"env,omitempty" yaml:"env,omitempty"`
-	AddExpansionsToEnv            map[string]string `json:"add_expansions_to_env,omitempty" yaml:"add_expansions_to_env,omitempty"`
+	AddExpansionsToEnv            bool              `json:"add_expansions_to_env,omitempty" yaml:"add_expansions_to_env,omitempty"`
 	IncludeExpansionsInEnv        []string          `json:"include_expansions_in_env,omitempty" yaml:"include_expansions_inenv,omitempty"`
 	AddToPath                     []string          `json:"add_to_path,omitempty" yaml:"add_to_path,omitempty"`
 	ContinueOnError               bool              `json:"continue_on_err,omitempty" yaml:"continue_on_err,omitempty"`
